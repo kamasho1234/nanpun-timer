@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #f97316;
+  --color-primary-dark: #ea580c;
+  --color-bg: #fefce8;
+  --color-surface: #ffffff;
+  --color-text: #1c1917;
+  --color-text-muted: #78716c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1c1917;
+    --color-surface: #292524;
+    --color-text: #fafaf9;
+    --color-text-muted: #a8a29e;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* スマホのnumber inputスピナー非表示 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 横スクロールの慣性スクロール */
+.scroll-smooth-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.timer-completed {
+  animation: flash 0.8s ease-in-out infinite;
+}
+
+/* ========== Header Animations ========== */
+
+/* 湯気アニメーション */
+@keyframes steam {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-8px) scaleX(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-18px) scaleX(0.8);
+    opacity: 0;
+  }
+}
+
+.steam {
+  animation: steam 3s ease-in-out infinite;
+}
+.steam-1 {
+  animation-delay: 0s;
+}
+.steam-2 {
+  animation-delay: 1s;
+}
+.steam-3 {
+  animation-delay: 2s;
+}
+
+/* 泡アニメーション */
+@keyframes bubble {
+  0% {
+    transform: scale(0.6) translateY(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1) translateY(-2px);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.2) translateY(-4px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.4) translateY(-8px);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  animation: bubble 2.5s ease-in-out infinite;
+}
+.bubble-1 {
+  animation-delay: 0s;
+}
+.bubble-2 {
+  animation-delay: 0.8s;
+}
+.bubble-3 {
+  animation-delay: 1.6s;
+}

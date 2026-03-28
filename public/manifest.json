@@ -1,0 +1,23 @@
+{
+  "name": "何分茹でる？タイマー｜茹で時間がすぐわかる料理タイマー",
+  "short_name": "茹で時間タイマー",
+  "description": "パスタ・ゆで卵・ブロッコリー・そうめんなど50種類以上の食材の茹で時間をワンタップで計れる無料Webタイマー。プリセットから選ぶだけで最適な茹で加減に。スマホ対応・通知機能付き。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fefce8",
+  "theme_color": "#f97316",
+  "categories": ["food", "utilities"],
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
