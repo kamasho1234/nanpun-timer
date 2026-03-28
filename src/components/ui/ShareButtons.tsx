@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const SITE_URL = 'https://yudejikan.com';
+const SITE_URL = 'https://yudejikan.net';
 const SHARE_TITLE = '何分茹でる？タイマー';
 const SHARE_TEXT =
   'パスタ・卵・野菜など50種類以上の茹で時間がワンタップでわかる無料タイマー！';

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const SITE_URL = "https://yudejikan.com";
+const SITE_URL = "https://yudejikan.net";
 const SITE_TITLE = "茹で時間タイマー｜何分茹でる？パスタ・卵・野菜の茹で時間がすぐわかる";
 const SITE_DESCRIPTION =
   "パスタ・ゆで卵・ブロッコリー・そうめんなど50種類以上の食材の茹で時間がワンタップでわかる無料Webタイマー。半熟卵7分30秒、パスタ標準7分など最適な茹で加減をプリセットから選ぶだけ。スマホ対応・通知機能付き。";

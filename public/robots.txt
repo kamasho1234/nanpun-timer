@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yudejikan.com/sitemap.xml
+Sitemap: https://yudejikan.net/sitemap.xml
