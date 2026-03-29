@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   manifest: "/manifest.json",
+  verification: {
+    google: "foZEamqMV21x3Q_PI1kCMPyRg7cMjoHLreJbP6QW5Yk",
+  },
   icons: {
     icon: "/favicon.svg",
     apple: "/icons/icon-192.png",
