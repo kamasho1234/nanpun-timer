@@ -26,6 +26,9 @@ body {
   padding-right: env(safe-area-inset-right);
 }
 
+/* CLS対策: レイアウトシフト防止 */
+img, svg { display: block; }
+
 /* スマホのnumber inputスピナー非表示 */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

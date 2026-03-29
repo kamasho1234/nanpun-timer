@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 鍋本体 -->
+  <rect x="4" y="14" width="24" height="14" rx="3" fill="#f97316"/>
+  <!-- 鍋の縁 -->
+  <rect x="2" y="12" width="28" height="4" rx="2" fill="#ea580c"/>
+  <!-- 左取っ手 -->
+  <rect x="0" y="13" width="4" height="2" rx="1" fill="#78716c"/>
+  <!-- 右取っ手 -->
+  <rect x="28" y="13" width="4" height="2" rx="1" fill="#78716c"/>
+  <!-- 蓋つまみ -->
+  <circle cx="16" cy="10" r="2" fill="#78716c"/>
+  <!-- 蓋 -->
+  <ellipse cx="16" cy="12" rx="10" ry="2" fill="#fb923c"/>
+  <!-- 湯気1 -->
+  <path d="M10 8 Q11 5 10 2" stroke="#d6d3d1" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- 湯気2 -->
+  <path d="M16 7 Q17 4 16 1" stroke="#d6d3d1" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- 湯気3 -->
+  <path d="M22 8 Q23 5 22 2" stroke="#d6d3d1" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+</svg>

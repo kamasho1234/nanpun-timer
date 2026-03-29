@@ -72,6 +72,20 @@ export default function Home() {
             <NotificationGuide />
           </section>
         </div>
+
+        <footer className="mt-8 pt-6 border-t border-amber-200">
+          <h2 className="text-sm font-bold text-stone-600 mb-2">茹で時間ガイド</h2>
+          <p className="text-xs text-stone-400 leading-relaxed">
+            「何分茹でる？タイマー」は、パスタ・ゆで卵・ブロッコリー・そうめん・うどんなど
+            50種類以上の食材の最適な茹で時間をプリセットから選ぶだけで計れる無料Webタイマーです。
+            半熟卵は7分30秒、固ゆで卵は12分、スパゲッティ標準は7分など、食材ごとの茹で加減を
+            調理のコツと一緒にご案内します。スマートフォン対応・通知機能付きで、キッチンでの
+            料理をサポートします。
+          </p>
+          <p className="text-xs text-stone-400 mt-2">
+            &copy; 2026 yudejikan.net
+          </p>
+        </footer>
       </main>
 
       {/* グローバルアラーム停止ボタン（画面下部固定） */}

@@ -7,9 +7,14 @@ const SITE_DESCRIPTION =
   "パスタ・ゆで卵・ブロッコリー・そうめんなど50種類以上の食材の茹で時間がワンタップでわかる無料Webタイマー。半熟卵7分30秒、パスタ標準7分など最適な茹で加減をプリセットから選ぶだけ。スマホ対応・通知機能付き。";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   manifest: "/manifest.json",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/icons/icon-192.png",
+  },
   keywords: [
     "茹で時間",
     "何分茹でる",
@@ -162,6 +167,32 @@ const jsonLdFaq = {
   ],
 };
 
+const jsonLdHowTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "茹で時間タイマーの使い方",
+  description: "食材を選んでタイマーをセットするだけ",
+  step: [
+    { "@type": "HowToStep", text: "食材カテゴリ（卵・パスタ・野菜など）を選ぶ" },
+    { "@type": "HowToStep", text: "茹でたい食材をタップする" },
+    { "@type": "HowToStep", text: "茹で時間とコツを確認して「タイマー開始」を押す" },
+    { "@type": "HowToStep", text: "タイマー完了で音と通知でお知らせ" },
+  ],
+};
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "茹で時間タイマー",
+      item: SITE_URL,
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -177,6 +208,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
         />
       </head>
       <body className="min-h-screen">
